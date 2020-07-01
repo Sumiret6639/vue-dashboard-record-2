@@ -1,0 +1,60 @@
+// BS4 & 其他自訂項目
+@import "./utilities/_commonVariables";
+@import "./utilities/_mixin";
+@import "./utilities/_utilities";
+@import "~bootstrap/scss/functions";
+@import "./utilities/_variables";
+@import "~bootstrap/scss/bootstrap";
+// @import 'aos/dist/aos.css'; 
+
+// Fontawesome ＆ Font
+@import url("@fortawesome/fontawesome-free/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+// Layout
+@import "./pages/_header";
+
+//pages
+@import "./pages/_dashboard";
+@import "./pages/_index";
+@import "./pages/_indexContent";
+@import "./pages/_allProduct";
+@import "./pages/_itemDetail";
+@import "./pages/_arranged";
+
+// 通用
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: auto;
+}
+
+*,*::after,*::before{
+    outline: none;
+    vertical-align: center;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background: transparent;
+    border: 0;
+
+    &:focus{
+        outline: none;
+    }
+}
+

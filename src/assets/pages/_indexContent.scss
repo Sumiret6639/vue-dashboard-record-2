@@ -1,0 +1,218 @@
+.index-content{
+    position: relative;
+    @extend %flex-column;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner{
+    overflow: hidden;
+    background-color: #F5EBEF;
+
+    &::before{
+        @include pseudo(400px,400px);
+        left: 35%;
+        bottom: -180px;
+        border-radius: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 30px #F8CDBD;
+    }
+
+    h1{
+        font-size: 72px;
+        color: white;
+        margin-bottom: 16px;
+
+        @include pad{
+            font-size: 56px;
+        }
+    }
+
+    h2{
+        color: #474855;
+        margin-bottom: 16px;
+    }
+
+    h5{
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 1px;
+        margin-bottom: margin(2);
+        color: #aaa;
+    }
+
+    .left{
+        flex: 3;
+        margin: auto 0;
+        text-align: right;
+        padding: 0 padding(2);
+    }
+    
+
+    .shop-buttton{
+        display: block;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 20px #F8CDBD;
+        cursor: pointer;
+        color: $black-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover::before{
+            background-color: #F8CDBD;
+            color: #eee;
+        }
+
+        @include phone{
+            position: absolute;
+            right: 50px;
+            bottom: -100px;
+        }
+    }
+
+    .banner-pic-2{
+        margin-bottom: 0;
+        background-size: 100%;
+        background-position-y: 50%;
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+
+        @include phone{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+}
+
+
+.brand-text{
+    *{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand-img{
+        height: auto;
+        filter: contrast(70%)
+    }
+
+    h5{
+        color: #474855;
+        margin-bottom: 32px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 1px;
+    }
+}
+
+.latest{
+    margin: margin(3) 0;
+    position: relative;
+}
+
+.news-contain{
+    margin: margin(1) 0;
+    
+}
+
+.news-item{
+    display: flex;
+    padding-bottom: padding(1);
+    padding-right: padding(1);
+    margin-bottom: margin(2);
+
+    h3{
+        line-height: 1;
+        margin-bottom: margin(1);
+    }
+
+    h5{
+        margin-bottom: margin(0.5);
+    }
+
+    .right{
+        padding-bottom: padding(1);
+        // border-bottom: 1px dashed #000;
+    }
+}
+
+.carousel-custom{
+    margin-bottom: margin(4);
+}
+
+.carousel .carousel-item {
+    height: 500px;
+    position: relative;
+
+    img {
+        min-height: 400px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+}
+
+.compared{
+    background-color: #F5EBEF;
+    display: flex;
+    justify-content: center;
+
+    .container{
+        margin: margin(2) 0;
+    }
+
+    table{
+        thead, tr, th, td{
+            text-align: center;
+            background-color: rgba(#fff,0.8);
+            border: 2px solid $gray-primary;
+        }
+    }
+}
+
+.customers-feedback{
+    margin: margin(4) 0;
+}
+
+.sample-item{
+    @extend %flex-column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.sample-pic{
+    width: 180px;
+    height: 180px;
+    margin-top: margin(2);
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.sample-text{
+    padding: padding(2);
+
+    h5{
+        color: #474855;
+        margin-bottom: margin(0.5);
+    }
+
+    p{
+        color: #aaa;
+        // letter-spacing: 1px;
+    }
+}

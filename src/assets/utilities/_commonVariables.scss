@@ -1,0 +1,37 @@
+// 變數
+
+$pink-primary: #D58180;
+$pink-plus: #DB5461;
+$pink-lighten: #FBCDBD;
+$purple-primary: #9F9FED;
+$gray-primary: #F5EBEF;
+$gray-darken: #F1E4E9;
+$black-primary: #474855;
+
+// $paddingLevel: 1;
+$paddingBase: 16px;
+$marginBase: 16px;
+
+// 繼承
+%flex-column{
+    display: flex;
+    flex-direction: column;
+};
+
+// 背景顏色自訂
+%radius-button{
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+};
+
+%square-button{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+};

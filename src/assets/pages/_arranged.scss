@@ -1,0 +1,48 @@
+.arranged-content{
+    width: 100%;
+    background-color: $gray-primary;
+    
+    .container{
+        padding: padding(3) 0;
+    }
+}
+
+.arranged-slidebar{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    
+    .arranged-title{
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        background-color: $pink;
+        color: #fff;
+    }
+
+    .arranged-list{
+        border-top: 1px solid rgba($black-primary, 0.6);
+    }
+
+    input[type=radio]{
+        margin-right: 15px;
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        &:checked{
+            background-color: $black-primary;
+        }    
+    }
+        
+
+    .arranged-item{
+        padding: padding(0.5) 0;
+        letter-spacing: 1px;
+        color: $black-primary;
+        // cursor: pointer;
+    }
+}
+
+
+

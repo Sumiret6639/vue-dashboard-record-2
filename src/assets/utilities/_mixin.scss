@@ -1,0 +1,17 @@
+// 函數
+@function padding($paddingLevel: 1){
+    @return $paddingLevel * $paddingBase
+};
+
+@function margin($marginLevel: 1){
+    @return $marginLevel * $marginBase
+};
+
+// mixin
+@mixin pseudo($w: 100px, $h: 100px){
+    display: block;
+    content: "";
+    position: absolute;
+    width: $w;
+    height: $h;   
+}

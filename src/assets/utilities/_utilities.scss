@@ -1,0 +1,151 @@
+//顏色
+.txt-pink-primary{
+    color: $pink-primary;
+}
+
+.txt-black-lighten{
+    color: rgba(black, 0.5);
+}
+
+.bg-gray-primary{
+    background-color: $gray-primary;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.bg-cover{
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: margin(5);
+}
+
+.bg-cover-500{
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: margin(5);
+}
+
+.sub-title{
+    
+    line-height: 24px;
+    margin-bottom: margin(3);
+
+    &::before{
+        @include pseudo(10px,24px);
+        position: unset;  
+        display: inline-block;
+        margin-right: 10px;
+        background-color: #DB5461;
+    }
+}
+
+.img-title{
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    background-color: $black-primary;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 2px;
+    padding: padding(0.5);
+    margin-bottom: margin(4);
+}
+
+.img-txt{
+    display: block;
+    text-align: center;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(black, 0.3);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.p-3{
+    padding: padding(3);
+}
+
+.px-80{
+    padding-top: padding(5);
+    padding-bottom: padding(5);
+}
+
+.px-160{
+    padding-top: padding(10);
+    padding-bottom: padding(10);
+}
+
+.pt-80{
+    padding-top: padding(5);
+}
+
+.pb-80{
+    padding-bottom: padding(5);
+}
+
+.pb-160{
+    padding-bottom: padding(10);
+}
+
+.mb-80{
+    margin-bottom: margin(5);
+}
+
+.mt-72{
+    margin-top: margin(10)
+}
+
+.primary-content{
+    width: 100%;
+    background-color: #F5EBEF;
+}
+
+.img-100-auto{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right-point{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.underline-none{
+    outline: none;
+    text-decoration: none;
+
+    :hover{
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+//media query
+
+
+@mixin phone {
+    @media (min-width: 320px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media (min-width: 768px) and (max-width: 992px) {
+        @content;
+    }
+}
+

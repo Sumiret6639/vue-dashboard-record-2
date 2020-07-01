@@ -1,0 +1,17 @@
+.contact{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    position: fixed;
+    bottom: 30%;
+    background-color:  #a89ce5;
+    color: white;
+    z-index: 100;
+    transition: 0.5s;
+
+    &:hover{
+        width: 150px;
+        color: white;
+        transition: 0.5s
+    }
+}
